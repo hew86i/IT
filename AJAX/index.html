@@ -1,0 +1,32 @@
+<html>
+
+<title>AJAX Multiple DIV Refresh</title>
+
+<head>
+    <script src="ajax.js"></script>
+</head>
+
+<body>
+    <b>HASH #:</b>
+
+    <script type="text/javascript">
+        refreshdiv_timediv();
+    </script>
+    <div name="timediv" id="timediv"></div>
+    <b>... and this is the date and
+ time in Washington DC [DST GMT -7] (updates every 8 seconds):</b>
+
+    <script type="text/javascript">
+        refreshdiv_timeinwashington();
+    </script>
+    <div name="timeinwashington" id="timeinwashington"></div>
+    <b>Oh, and this is the current timestamp!
+ (updates every 10 seconds):</b>
+
+    <script type="text/javascript">
+        refreshdiv_otherdiv();
+    </script>
+    <div name="otherdiv" id="otherdiv"></div>
+</body>
+
+</html>
